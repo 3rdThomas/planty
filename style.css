@@ -8,6 +8,73 @@ Description: Hello Elementor is a lightweight and minimalist WordPress theme tha
 Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
 Version: 3.2.1.1735316275
 Updated: 2024-12-27 16:17:55
-...
 */
+
+h1{
+	font-family :syne;
+	font-weight : 900;
+	font-size : 38px;
+	text-align : center;
+	color : white;
+	padding-bottom : 40px;
+}
+h2{
+	font-family :syne;
+	font-weight : bold;
+	font-size : 30px;
+	color : white;
+	padding-top : 20px;
+}
+label{
+	font-family: "Syne", serif;
+  font-weight: 400;
+  font-style: normal;
+	font-size : 15px;
+	color : white;
+}
+.button{
+	background-color: #E0B9B4;
+	color : white;
+	border: 0px solid;
+	border-radius: 5px;
+	align-content: center;
+}
+.vl {
+  border-left: 1px solid white;
+  left: 50%;
+  margin-left: -3px;
+	margin-top: 35px;
+	margin-bottom: 15px;
+  top: 0;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #3B8E46;
+	padding-left : 60px;
+	padding-right : 60px;
+}
+.info-container {
+	display: flex;
+	flex-direction: row;
+
+	justify-content : space-between;
+  margin-bottom: 20px;
+	margin-top: 40px;
+	padding : 20px;
+}
+.product-container {
+    display: flex;
+		flex-direction: row;
+}
+.product {
+    text-align: center;
+    margin-bottom: 20px;
+	  padding : 20px;
+}
+.field {
+  border: 10px solid #ccc;
+  padding: 10px;
+}
+
 
