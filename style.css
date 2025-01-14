@@ -264,7 +264,7 @@ container est utilisé pour la page nous rencontrer
     }
     .livraison .vosinfo{
         display: flex;
-        flex-wrap: column;
+        flex-direction: column;
         justify-content : center;
         align-items: center;
         margin-bottom: 20px;
