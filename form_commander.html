@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Commander - Planty</title>
+  <link href="https://fonts.cdnfonts.com/css/syne" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+</head>
+<div class="container">
+  <h1>COMMANDER</h1>
+  <hr class="solid">
+  <h2>Votre commande</h2>
+  <div class="product-container">
+    <div class="product">
+      <img src="http://planty.local/wp-content/uploads/2025/01/fraiseForm.png" alt="Choix : Fraise" />
+      [number fraise class:fraise min:0 "0"]
+    </div>
+    <div class="product">
+      <img src="http://planty.local/wp-content/uploads/2025/01/pamplemousseForm.png" alt="Choix : Pamplemousse" />
+      [number pamplemousse class:pamplemousse min:0 "0"]
+    </div>
+    <div class="product">
+      <img src="http://planty.local/wp-content/uploads/2025/01/framboiseForm.png" alt="Choix : Framboise" />
+      [number Framboise class:framboise min:0 "0"]
+    </div>
+    <div class="product">
+      <img src="http://planty.local/wp-content/uploads/2025/01/citronForm.png" alt="Choix : Citron" />
+      [number citron class:citron min:0 "0"]
+    </div>
+  </div>
+  <hr class="solid">
+  <div class="info-container">
+    <div class="vosinfo">
+      <h2>Vos informations</h2>
+      <div class="info">
+        <label>Nom</label>
+        [text* nom id:form-nom class:field] 
+      </div>
+      <div class="info">
+        <label>Prénom</label>
+        [text* prenom id:form-prenom class:field] 
+      </div>
+      <div class="info">
+        <label>E-mail</label>
+        [email* email id:form-email class:field] 
+      </div>
+    </div>
+    <div class="vl"></div>
+
+    <div class="livraison">
+      <h2>Livraison</h2>
+      <div class="info">
+        <label>Adresse de livraison</label>
+        [text* adresse id:form-adresse class:field] 
+      </div>
+      <div class="info">
+        <label>Code postal</label>
+        [text* cp id:form-cp class:field] 
+      </div>
+      <div class="info">
+        <label>Ville</label>
+        [text* ville id:form-ville class:field] 
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <button class="button" type="submit">Commander</button>  
+  </div>
+</div>
