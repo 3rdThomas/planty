@@ -25,18 +25,50 @@ h2{
 	color : white;
 	padding-top : 20px;
 }
+.nous-contacter label{
+    color : black;
+}
 a{
     font-family: "Syne", serif;
     font-weight : 400;
     font-size : 15px;
     color: rgb(0, 0, 0);
 }
+/*
+label est utilisé pour la page de commander
+*/
 label{
 	font-family: "Syne", serif;
     font-weight: 400;
     font-style: normal;
 	font-size : 16px;
 	color : white;
+}
+/*
+label2 est utilisé pour la page de nous rencontrer
+*/
+.label2{
+	font-family: "Syne", serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size : 16px;
+	color : rgb(0, 0, 0);
+}
+/*
+field est utilisé pour les champs de texte de la page de commander
+*/
+.field{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+/*
+field2 est utilisé pour les champs de texte de la page nous rencontrer
+*/
+.field2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
 }
 input{
     margin-top: 5px;
@@ -119,6 +151,7 @@ input{
     min-height: 55px;
     min-width: 190px;
 }
+
 .vl {
     border-left: 1px solid white;
     left: 50%;
@@ -132,6 +165,15 @@ input{
 .container {
     margin: 0 auto;
     background-color: #3B8E46;
+	padding-left : 60px;
+	padding-right : 60px;
+}
+.container2 {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ffffff00;
 	padding-left : 60px;
 	padding-right : 60px;
 }
@@ -152,10 +194,6 @@ input{
     text-align: center;
     margin-bottom: 20px;
 	padding : 20px;
-}
-.field {
-    border: 10px solid #ccc;
-    padding: 10px;
 }
 .buttons{
     display: flex;
