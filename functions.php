@@ -21,20 +21,33 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 20 );
 
+
+/*Hook
 function hide_menu_conditional($items, $args) {
     if (!is_user_logged_in()) {
-
         // Trover l'élément "admin" dans le menu
         foreach ($items as $key => $item) {
             if ($item->title == 'Admin') {
-
                 // Retirer "admin" du menu
                 unset($items[$key]);
                 break;
             }
         }
     }
-
 return $items;
 }
 add_filter('wp_nav_menu_objects', 'hide_menu_conditional', 10, 2);
+*/ 
+add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
+
+function add_admin_link( $items, $args ) {
+
+    if (is_user_logged_in() && $args->theme_location == 'menu-1') {
+
+        $items .= '<li class="menu-item-235"><a href="'. get_admin_url() .'">Admin</a></li>';
+
+    }
+
+    return $items;
+
+}

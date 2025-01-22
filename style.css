@@ -123,6 +123,7 @@ bouton "Commander" du header
     justify-content : center;
     padding: 0px;
     align-items: center;  
+    order: 3;
 }
 /*
 texte du bouton "Commander" du header
@@ -132,6 +133,7 @@ texte du bouton "Commander" du header
     font-family :syne;
     font-weight : bold;
     font-size : 15px;
+    
 }
 /*
 bouton "Admin" du header
@@ -143,6 +145,7 @@ bouton "Admin" du header
     padding: 0px;
     align-items: center;
     padding-right: 30px;
+    order: 2;
 }
 /*
 bouton "Nous rencontrer" du header
@@ -154,6 +157,8 @@ bouton "Nous rencontrer" du header
     padding: 0px;
     align-items: center;
     padding-right: 30px;
+    order: 1;
+    
 }
 .button{
 	background-color: #E0B9B4;
