@@ -21,4 +21,20 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 20 );
 
-// END ENQUEUE PARENT ACTION
+function hide_menu_conditional($items, $args) {
+    if (!is_user_logged_in()) {
+
+        // Trover l'élément "admin" dans le menu
+        foreach ($items as $key => $item) {
+            if ($item->title == 'Admin') {
+
+                // Retirer "admin" du menu
+                unset($items[$key]);
+                break;
+            }
+        }
+    }
+
+return $items;
+}
+add_filter('wp_nav_menu_objects', 'hide_menu_conditional', 10, 2);

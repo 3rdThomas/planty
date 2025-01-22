@@ -54,6 +54,9 @@ label2 est utilisé pour la page de nous rencontrer
 	font-size : 16px;
 	color : rgb(0, 0, 0);
 }
+.info2{
+    width: 30% !important;
+}
 /*
 field est utilisé pour les champs de texte de la page de commander
 */
@@ -68,7 +71,7 @@ field2 est utilisé pour les champs de texte de la page nous rencontrer
 .field2{
     margin-top: 10px;
     margin-bottom: 20px;
-    border: none;
+    border: none!important;
 }
 input{
     margin-top: 5px;
@@ -231,9 +234,12 @@ container est utilisé pour la page nous rencontrer
         flex-direction: column;
     }
 
-    img{
+    .product img{
         width: 70%;
-    }   
+    }  
+    .info2{
+        width: 85% !important;
+    } 
     h1{
         font-family :syne;
         font-weight : 900;
